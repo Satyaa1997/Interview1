@@ -81,8 +81,12 @@ padding:40px;
   border-radius: 5px;
 }
 .Clients{   
-border:1px solid black;
+border:1px solid rgba(0, 0, 0, 0.185);
 padding:20px;
 border-radius:8px;
 background:white;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
 }
