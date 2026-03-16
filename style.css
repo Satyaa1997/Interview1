@@ -1,331 +1,88 @@
 body{
-margin:0;
-font-family: Arial;
-padding:5px;
+background:#f5f5f5;
+font-family:Arial;
+}
+.navbar-nav .nav-link{
+  color: black;
 }
 
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:white;
-padding:15px 40px;
-flex-wrap:wrap;
+.navbar-nav .nav-link:hover{
+  color: rgb(238, 160, 15);
 }
 
-.logo img{
-max-width:150px;
+.navbar-nav .nav-link.active{
+  color: rgb(233, 30, 40);
+  font-weight: bold;
 }
 
-.nav-links{
-list-style:none;
-display:flex;
-gap:20px;
-padding:0;
-margin:0;
-flex-wrap:wrap;
+.img-box{
+
+height:120px;
+background:#ddd;
+border-radius:6px;
+
 }
 
-.nav-links a{
-text-decoration:none;
-color:black;
-font-size:16px;
+.logo-box{
+
+height:60px;
+background:#ddd;
+
 }
 
-.nav-links a:hover{
-color:yellow;
-}
+.footer{
 
-.bg-blue{
-background:blue;
-padding:10px 15px;
-border-radius:10px;
-color:white !important;
-}
-
-.bg-yellow{
-background:rgb(247,247,19);
-padding:10px 15px;
-border-radius:10px;
-}
-
-
-.jurney{
-display:flex;
-gap:40px;
-padding:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.jurney1{
- height: 450px;
-width:400px;
-background:white;
-border-radius:10px;
-box-shadow:0px 4px 15px rgba(0,0,0,0.2);
-padding:20px;
-}
-
-.jurney1 h3{
-text-align:center;
-}
-
-.Way-rad{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.travel-placeho{
-display:flex;
-gap:20px;
-padding-bottom:20px;
-flex-wrap:wrap;
-}
-
-.circle-icon{
-height:50px;
-width:50px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-background:black;
+background:#1b0b2e;
 color:white;
-}
-
-.travel-placeho2{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.input-box{
-width:100%;
-border:none;
-outline:none;
-border-bottom:1px solid gray;
-padding:8px;
-}
-
-.jurney2{
-width:550px;
-max-width:100%;
-}
-
-.discount{
-display:flex;
-justify-content:space-between;
-}
-
-.pic{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.pic img{
-width:100%;
-max-width:250px;
-}
-
-.popular-city{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-margin:20px 0;
-}
-
-.pop-City-Box{
-display:flex;
-justify-content: space-between;
-gap:15px;
+padding:40px;
 
 }
-.routs{
-    display: flex;
-    justify-content: space-between;
-}
-.pop-City-Box img{
-width:100%;
-max-width:120px;
+.offer-card{
+  position: relative;
+  overflow: hidden;
 }
 
-.view-all{
-display:flex;
-align-items:center;
-gap:5px;
+.offer-img{
+  width: 100%;
+  height: 180px;      /* apne design ke hisab se change kar sakte ho */
+  object-fit: cover;  /* image pura box cover karegi */
 }
 
-.view-all span{
-background:antiquewhite;
-border:2px solid black;
-padding:5px;
+.offer-text{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+.city-card{
+  position: relative;
+  overflow: hidden;
+  border: none;
 }
 
-.carimg img{
-width:100%;
-display: flex;
+.city-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.inova-img{
-display:flex;
-gap:20px;
-justify-content:space-between;
+.city-text{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-weight: 600;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
-.popular1{
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ino1,.ino2,.ino3{
-width:33%;
-}
-
-.inova-img img{
-width:100%;
-height:200px;
-object-fit:cover;
+.Clients{   
+border:1px solid black;
+padding:20px;
 border-radius:8px;
-}
-
-.logo2{
-display:flex;
-justify-content:space-around;
-flex-wrap:wrap;
-margin:20px;
-}
-
-.logo2 span{
-font-size:60px;
-border:2px solid orange;
-padding:10px;
-}
-
-.popular{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.popular img{
-width:100%;
-max-width:200px;
-}
-
-
-main{
-background:yellow;
-padding:20px;
-}
-
-.popular-city,
-.popular-outstation{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin:20px;
-}
-
-.city,
-.station{
-margin:0;
-}
-
-
-footer{
-background:rgb(37,37,110);
-color:white;
-}
-
-.foot1{
-display:flex;
-flex-wrap:wrap;
-}
-
-.fot1{
-width:400px;
-padding:50px;
-}
-
-.fot2{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-padding:20px;
-}
-
-.box1 span,
-.box2 span,
-.box3 span,
-.box4 span{
-display:block;
-color:white;
-}
-
-.last{
-background:black;
-color:white;
-padding:10px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
-}
-
-
-@media (max-width:768px){
-
-.navbar{
-flex-direction:column;
-align-items:flex-start;
-}
-
-.jurney{
-flex-direction:column;
-align-items:center;
-}
-
-.jurney1{
-width:100%;
-}
-
-.jurney2{
-width:100%;
-}
-
-.travel-placeho{
-flex-direction:column;
-}
-
-.travel-placeho2{
-flex-direction:column;
-}
-
-.inova-img{
-flex-direction:column;
-align-items:center;
-}
-
-.logo2{
-justify-content:center;
-gap:20px;
-}
-
-.fot2{
-grid-template-columns:1fr 1fr;
-}
-
-.last{
-flex-direction:column;
-gap:10px;
-}
-
+background:white;
 }
